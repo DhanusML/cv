@@ -28,6 +28,18 @@
 \usepackage{hyperref}
 \setlength{\textwidth}{5.1in} % Text width of the document
 
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item[]}{\end{list}}
+
+
 \begin{document}
 
 %----------------------------------------------------------------------------------------
@@ -100,21 +112,24 @@ City Central School, Kollam, Kerala
 %----------------------------------------------------------------------------------------
  
 \section{PROJECTS}
-	{\sl Spectral Clustering}\hfill Jul 2022 -- present\\
-	Advisor: Ambedkar Dukkipati, CSA Department, IISc, Bengaluru.
+{\sl Spectral Clustering}\hfill Jul 2022 -- present\\
+Advisor: Ambedkar Dukkipati, CSA Department, IISc.
 
 {\sl BSc thesis project on compressed sensing} \hfill  Jan -- May 2022\\
-Advisor: Manjunath Krishnapur, Department of Mathematics, IISc, Bengaluru.
+Advisor: Manjunath Krishnapur, Department of Mathematics, IISc.
+\begin{changemargin}{0pt}{80pt}
 \begin{itemize} \itemsep -2pt
 	\item Techniques for recovering sparse signal from a linear measurement.
 	\item Explored how geometry of the set of sparse vectors
 		guarantee exact recovery using basis-pursuit.
 \end{itemize} 
+\end{changemargin}
 
-\smallskip
+\bigskip
 
 {\sl Dimensionality reduction: Machine learning course project} \hfill Mar -- May 2022\\
-	Advisor: Chaitanya Murti, CSA Department, IISc, Bengaluru.
+	Advisor: Chaitanya Murti, CSA Department, IISc.
+\begin{changemargin}{0pt}{80pt}
 	\begin{itemize}
 		\item Analyzed and implemented various dimensionality
 			reduction techniques on CIFAR-10 dataset.
@@ -124,40 +139,47 @@ Advisor: Manjunath Krishnapur, Department of Mathematics, IISc, Bengaluru.
 			kernel-PCA, linear discriminant analysis, autoencoders
 			and Johnson Lindenstrauss lemma.
 	\end{itemize}
+\end{changemargin}
 
-\smallskip
+\bigskip
 
 {\sl Reading project on Zorn's lemma} \hfill Jul -- Aug 2021 \\
-Advisor: Arvind Ayyer, Department of Mathematics, IISc, Bengaluru.
+Advisor: Arvind Ayyer, Department of Mathematics, IISc.
+\begin{changemargin}{0pt}{80pt}
 \begin{itemize} 
 	\item Explored the equivalence between Zorn's lemma,
 		axiom of choice and well ordering principle.
 \end{itemize} 
+\end{changemargin}
 
-\smallskip
+\bigskip
 
 {\sl Modelling Bernoulli bond percolation in 2-dimensional lattice}\hfill Jun -- Oct 2020\\
 Github repository is linked
 \href{https://github.com/AbhinavM2000/percolation\_}{here}
+\begin{changemargin}{0pt}{80pt}
 \begin{itemize}
 	\item Used C and python to estimate percolation threshold in a 2D lattice
 \end{itemize}
+\end{changemargin}
 
-\smallskip
+\bigskip
 
 {\sl Developed a simple board game using python}\hfill May -- Jun 2020\\
 Github repository is linked
 \href{https://github.com/DhanusML/marble-and-hole-puzzle}{here}.
 
-\smallskip
+\bigskip
 
 {\sl Reading project on probability thoery} \hfill Jun -- Aug 2019 \\
-Advisor: Arvind Ayyer, Department of Mathematics, IISc, Bangalore
+Advisor: Arvind Ayyer, Department of Mathematics, IISc.
+\begin{changemargin}{0pt}{80pt}
 \begin{itemize} \itemsep -2pt % Reduce space between items
 	\item Explored elementary topics in probability theory.
 	\item Baye's theorem, conditional probabilities,
 		conditional expectation, etc.
 \end{itemize}
+\end{changemargin}
 
 
 
